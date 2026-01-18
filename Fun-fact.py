@@ -13,8 +13,7 @@ def get_fun_fact(_):
 
     #put html content
     put_html('<p align="left'>
-             '<h2><img src="https://www.shutterstock.com/image-vector/doodle-emoji-face-icon-set-hand-2706111629?'
-             'trackingId=b9c5e4a8-303c-41d4-b26f-90cc0b584961&listId=searchResults"  width="7%">Fun Fact Generator</h2>'
+             '<h2><img src="https://api.dicebear.com/7.x/fun-emoji/png?size=200" width="7%">Fun Fact Generator</h2>'
              '</p>')
     
  #use the useless text
@@ -31,7 +30,7 @@ def get_fun_fact(_):
     style(put_text(useless_fact), 'color:red; font-size:30px')
 
     #use the image
-    img_url="https://www.vecteezy.com/vector-art/24237089-big-set-of-yellow-emoji-funny-emoticons-faces-with-facial-expressions"
+    img_url="https://api.dicebear.com/7.x/fun-emoji/png?size=200"
     img_response=requests.get(img_url)
 
     put_image(img_response.content)
@@ -44,8 +43,7 @@ if __name__=='__main__':
 
         #put the html heading
         put_html('<p align="left'>
-             '<h2><img src="https://www.vecteezy.com/vector-art/24237089-big-set-of-yellow-emoji-'
-             'funny-emoticons-faces-with-facial-expressions"  width="7%">Fun Fact Generator</h2>'
+             '<h2><img src="https://api.dicebear.com/7.x/fun-emoji/png?size=200"  width="7%">Fun Fact Generator</h2>'
              '</p>')
         
         put_buttons([dict(label='click me', value='outline-success', color='outline-success')],
