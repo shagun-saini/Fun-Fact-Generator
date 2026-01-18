@@ -40,7 +40,7 @@ def get_fun_fact(_):
     put_buttons([dict(label='click me', value='outline-success', color='outline-success')],
     onclick=get_fun_fact)
 
-    if __name__=='__main__':
+if __name__=='__main__':
 
         #put the html heading
         put_html('<p align="left'>
