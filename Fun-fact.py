@@ -43,10 +43,7 @@ if __name__=='__main__':
 
         #put the html heading
         put_html('<p align="left'>
-             '<h2><img src="https://api.dicebear.com/7.x/fun-emoji/png?size=200"  width="5%">Fun Fact Generator</h2>'
-             '</p>')
-        
-        put_buttons([dict(label='click me', value='outline-success', color='outline-success')],
+             '<h2><img src="https://api.dicebear.com/7.x/fun-emoji/png?size=200"  width="7//tons([dict(label='click me', value='outline-success', color='outline-success')],
     onclick=get_fun_fact)
         
        #hold the session for the long time
